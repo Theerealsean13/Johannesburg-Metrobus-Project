@@ -1,0 +1,172 @@
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header .container {
+        padding: 0 15px;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .search-bar {
+        padding: 0 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer {
+        padding: 1rem 0 0.5rem;
+    }
+
+    .mobile-nav ul {
+        padding: 0 1rem;
+    }
+
+    .mobile-nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-bar input {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .search-bar {
+        max-width: 800px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .search-bar {
+        max-width: 1000px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not(.light-mode) {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    body:not(.light-mode) .card {
+        background: #1e1e1e;
+    }
+
+    body:not(.light-mode) h1,
+    body:not(.light-mode) h2,
+    body:not(.light-mode) h3,
+    body:not(.light-mode) h4,
+    body:not(.light-mode) h5,
+    body:not(.light-mode) h6 {
+        color: #FFCC00;
+    }
+}
+
+@media print {
+    .header,
+    .footer,
+    .mobile-nav,
+    .theme-toggle,
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+    }
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 4px; 
+}
+
+.table-responsive table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+}
+
+@media (max-width: 768px) {
+    .table-responsive th, 
+    .table-responsive td {
+        white-space: nowrap;
+    }
+}
